@@ -380,3 +380,37 @@ img {
     position: absolute;
     right: 30px;
 }
+
+/* ホバー時のアニメーションを追加 */
+.courses-box-cours {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.courses-other {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* ホバー時に影を消してから影を追加 */
+.courses-box-cours:hover {
+    filter: none;
+    filter: drop-shadow(12px 12px 2px var(--color-button-hover-red));
+}
+
+.courses-other:hover {
+    filter: none;
+    filter: drop-shadow(12px 12px 2px var(--color-course-hover-yellow));
+}
+
+
+/* 背景の色変更 */
+.courses-box-cours:hover .course-textbox {
+    background: var(--course-hover-yellow, #F4E877);
+}
+
+.courses-other:hover {
+    background: var(--color-button-hover-red, #F4E877);
+}
+
+.courses-other:hover .arrow-right-img {
+    background: var(--color-button-hover-red, #F4E877);
+}
