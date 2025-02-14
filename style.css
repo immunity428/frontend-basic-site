@@ -280,7 +280,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     width: 250px;
-    height: 150px;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,7 +316,7 @@ img {
 .course-textbox {
     display: flex;
     flex-direction: column;
-    height: 150px;
+    height: 180px;
     padding: 20px;
     gap: 10px;
     background-color: var(--color-accent-yellow);
@@ -338,6 +338,7 @@ img {
 .course-textbox-text p {
     margin: 0;
     padding: 0;
+    ;
 }
 
 .course-textbox-more {
@@ -363,6 +364,7 @@ img {
     position: relative;
     filter: drop-shadow(4px 4px var(--color-accent-yellow));
     width: 100%;
+    padding: 0px 40px;
 }
 
 .courses-other p {
@@ -378,7 +380,7 @@ img {
     background-color: var(--color-accent-red);
     align-items: right;
     position: absolute;
-    right: 30px;
+    right: 20px;
 }
 
 /* ホバー時のアニメーションを追加 */
@@ -413,4 +415,24 @@ img {
 
 .courses-other:hover .arrow-right-img {
     background: var(--color-button-hover-red, #F4E877);
+}
+
+@media(max-width:750px) {
+    .courses-box-cours {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .course-textbox-text {
+        height: auto;
+    }
+
+    .course-img {
+        width: 100%;
+    }
+
+    .course-img p {
+        font-size: 24px;
+        font-weight: 400;
+    }
 }
