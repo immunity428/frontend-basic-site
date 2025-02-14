@@ -157,6 +157,11 @@ img {
   color: var(--color-white);
 }
 
+.about-main p {
+  margin: 0px;
+  padding: 0px;
+}
+
 .about-main-1 {
   color: var(--color-accent-yellow);
 }
@@ -171,6 +176,7 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  width: 750px;
 }
 
 .about-sub-text {
@@ -219,6 +225,10 @@ img {
   .about-container {
     padding: 0px 0px;
   }
+
+  .about-sub {
+    width: auto;
+  }
 }
 
 /* courses */
@@ -266,7 +276,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  width: 100%;
+  width: 750px;
 }
 
 .courses-box-cours {
@@ -456,6 +466,10 @@ form {
 
   .course-img {
     width: 100%;
+  }
+
+  .courses-box {
+    width: auto;
   }
 
   .course-img p {
