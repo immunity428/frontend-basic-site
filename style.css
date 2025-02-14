@@ -174,15 +174,18 @@ img {
     line-height: normal;
 }
 
+form {
+    width: 100%;
+}
+
 .signup-container-form {
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 800px;
+    width: auto;
 }
-
 
 .signup-container-form label {
     color: var(--color-black);
@@ -230,7 +233,7 @@ img {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 90%;
+    width: 100%;
     background-color: var(--color-accent-red);
     border: none;
     text-align: center;
@@ -257,4 +260,60 @@ img {
     width: 40px;
 }
 
-@media (max-width:750px) {}
+@media (max-width:750px) {
+    .signup {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .signup-container {
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .signup-container-title p {
+        font-size: 24px;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signup-container-form {
+        gap: 10px;
+    }
+
+    .signup-container-form label {
+        font-size: 16px;
+    }
+
+    .signup-container-form input,
+    .signup-container-form textarea {
+        padding: 8px;
+        width: 100%;
+    }
+
+    .form-name,
+    .form-Address,
+    .form-year,
+    .form-massage {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .signup-container-form textarea {
+        height: 100px;
+    }
+
+    .submit-button p {
+        font-size: 14px;
+    }
+
+    .submit-button img {
+        right: 20px;
+        height: 30px;
+        width: 30px;
+    }
+}
