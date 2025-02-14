@@ -1,88 +1,109 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>サイト制作課題</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700&display=swap"
-        rel="stylesheet" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <h1 class="header-logo-wrapper">
-            <img class="header-logo" src="./img/logo.svg" alt="Grand Players">
-        </h1>
+      <h1 class="header-logo-wrapper">
+        <img class="header-logo" src="./img/logo.svg" alt="Grand Players" />
+      </h1>
     </header>
 
     <section class="hero">
-
-        <div class="hero-container">
-            <div class="hero-texts">
-                <p class="hero-main-copy">
-                    BE <br>
-                    A <br>
-                    <span class="hero-main-copy-ace">
-                        "GRAND" <br>
-                    </span>
-                    PLAYER!!
-                </p>
-                <p class="hero-sub-copy">
-                    選べる1000のレッスンであなたもギターヒーローに!!
-                </p>
-            </div>
+      <div class="hero-container">
+        <div class="hero-texts">
+          <p class="hero-main-copy">
+            BE <br />
+            A <br />
+            <span class="hero-main-copy-ace"> "GRAND" <br /> </span>
+            PLAYER!!
+          </p>
+          <p class="hero-sub-copy">
+            選べる1000のレッスンであなたもギターヒーローに!!
+          </p>
         </div>
-
+      </div>
     </section>
     <section class="signup">
-        <div class="signup-container">
-            <div class="signup-container-title">
-                <p>Let’s Try!</p>
-            </div>
-            <div class="signup-container-text">
-                <p>Grand Playersでは、ご利用登録いただけた方に対し、３レッスン分の無料枠をプレゼントいたします！<br>
-                    今すぐレッスンを始めて、”Grand”なプレイヤーを目指しましょう！<br>
-                    お申し込みは下記フォームからどうぞ！</p>
-            </div>
-            <form>
-                <div class="signup-container-form">
-                    <div class="form-name">
-                        <label for="name">お名前</label>
-                        <input type="text" id="name" name="name" placeholder="エドワード ヴァン 太郎">
-                    </div>
-
-                    <div class="form-Address">
-                        <label for="email">メールアドレス</label>
-                        <input type="email" id="email" name="email" placeholder="grand.players@example.com">
-                    </div>
-                    <div class="form-year">
-                        <label for="guitar-history">ギター歴（年）</label>
-                        <input type="number" min="0" id="guitar-history" name="guitar-history" placeholder="3">
-                    </div>
-                    <div class="form-massage">
-                        <label for="message">意気込みをどうぞ！</label>
-                        <textarea id="message" name="message" placeholder="イカすギターソロをかましてモテたい！"></textarea>
-                    </div>
-                </div>
-                <div class="signup-container-button">
-                    <button class="submit-button" type="submit">
-                        <p class="button-text">送信する</p>
-                        <img class=.arrow-right-img src="./img/arrow-right.svg" alt="arrow-right-img">
-                    </button>
-                </div>
-            </form>
+      <div class="signup-container">
+        <div class="signup-container-title">
+          <p>Let’s Try!</p>
         </div>
+        <div class="signup-container-text">
+          <p>
+            GrandPlayersでは、ご利用登録いただけた方に対し、３レッスン分の無料枠をプレゼントいたします！<br />
+            今すぐレッスンを始めて、”Grand”なプレイヤーを目指しましょう！<br />
+            お申し込みは下記フォームからどうぞ！
+          </p>
+        </div>
+        <form>
+          <div class="signup-container-form">
+            <div class="form-name">
+              <label for="name">お名前</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="エドワード ヴァン 太郎"
+              />
+            </div>
+
+            <div class="form-Address">
+              <label for="email">メールアドレス</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="grand.players@example.com"
+              />
+            </div>
+            <div class="form-year">
+              <label for="guitar-history">ギター歴（年）</label>
+              <input
+                type="number"
+                min="0"
+                id="guitar-history"
+                name="guitar-history"
+                placeholder="3"
+              />
+            </div>
+            <div class="form-massage">
+              <label for="message">意気込みをどうぞ！</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="イカすギターソロをかましてモテたい！"
+              ></textarea>
+            </div>
+          </div>
+          <div class="signup-container-button">
+            <button class="submit-button" type="submit">
+              <p class="button-text">送信する</p>
+              <img
+                class=".arrow-right-img"
+                src="./img/arrow-right.svg"
+                alt="arrow-right-img"
+              />
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
     <section class="footer">
-        <div class="footer-container">
-            <p>©2023 GrandPlayers</p>
-        </div>
+      <div class="footer-container">
+        <p>©2023 GrandPlayers</p>
+      </div>
     </section>
-
-</body>
-
+  </body>
 </html>
