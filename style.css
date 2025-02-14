@@ -255,6 +255,11 @@ img {
 .courses-title p {
     margin: 0;
     padding: 0;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.64px;
 }
 
 .courses-box {
@@ -338,7 +343,10 @@ img {
 .course-textbox-text p {
     margin: 0;
     padding: 0;
-    ;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .course-textbox-more {
@@ -354,6 +362,10 @@ img {
 .course-textbox-more p {
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .courses-other {
@@ -381,6 +393,8 @@ img {
     align-items: right;
     position: absolute;
     right: 20px;
+    height: 40px;
+    width: 40px;
 }
 
 /* ホバー時のアニメーションを追加 */
@@ -434,6 +448,27 @@ img {
 
     .course-img p {
         font-size: 24px;
-        font-weight: 400;
     }
+
+    .courses-other p {
+        font-size: 14px;
+    }
+
+    .course-textbox-more p {
+        font-size: 12px;
+    }
+
+    .course-textbox-text p {
+        font-size: 14px;
+    }
+
+    .courses-title p {
+        font-size: 24px;
+    }
+
+    .arrow-right-img {
+        width: 30px;
+        height: 30px;
+    }
+
 }
