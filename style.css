@@ -301,6 +301,7 @@ form {
     .form-massage {
         flex-direction: column;
         width: 100%;
+        gap: 10px;
     }
 
     .signup-container-form textarea {
@@ -315,5 +316,37 @@ form {
         right: 20px;
         height: 30px;
         width: 30px;
+    }
+}
+
+/* Fotter */
+.footer {
+    background-color: var(--color-black);
+}
+
+.footer-container {
+    display: flex;
+    padding: 60px 0px;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.footer-container p {
+    color: var(--color-white);
+    font-family: var(--font-family-body);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (max-width:750px) {
+    .footer-container {
+        padding: 40px 0px;
+    }
+
+    .footer-container p {
+        font-size: 12px;
     }
 }
