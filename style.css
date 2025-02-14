@@ -368,31 +368,47 @@ img {
     line-height: normal;
 }
 
+form {
+    width: 100%;
+}
+
 .courses-other {
-    background-color: var(--color-accent-red);
+    margin-top: 40px;
+    filter: drop-shadow(4px 4px var(--color-black));
+    color: var(--color-accent-red);
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    filter: drop-shadow(4px 4px var(--color-accent-yellow));
-    width: 100%;
-    padding: 0px 40px;
 }
 
-.courses-other p {
-    color: var(--white, #FFFEFC);
-    font-family: var(--font-family-heading);
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    background-color: var(--color-accent-red);
+    border: none;
+    text-align: center;
+    padding: 10px 40px;
+    height: 60px;
+}
+
+.submit-button p {
+    color: var(--color-white);
+    font-family: var(--font-family-body);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.arrow-right-img {
+.submit-button img {
+    display: flex;
+    margin-left: auto;
     background-color: var(--color-accent-red);
-    align-items: right;
     position: absolute;
-    right: 20px;
+    right: 40px;
     height: 40px;
     width: 40px;
 }
