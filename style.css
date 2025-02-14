@@ -420,10 +420,16 @@ img {
 @media(max-width:750px) {
     .courses-box-cours {
         flex-direction: column;
+        height: auto;
+    }
+
+    .course-textbox-text {
+        height: auto;
     }
 
     .course-img {
         width: 100%;
+
     }
 
     .course-img p {
