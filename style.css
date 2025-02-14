@@ -131,3 +131,130 @@ img {
         gap: 20px;
     }
 }
+
+/* Signup */
+.signup {
+    background-color: var(--color-accent-yellow);
+    display: flex;
+    padding: 80px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.signup-container {
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.signup-container-title p {
+    margin: 0px;
+    padding: 0px;
+    color: var(--color-black);
+    font-family: var(--font-family-heading);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+.signup-container-text p {
+    margin: 0px;
+    padding: 0px;
+    color: var(--color-black);
+    font-family: var(--font-family-body);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.signup-container-form {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 800px;
+}
+
+
+.signup-container-form label {
+    color: var(--color-black);
+    font-family: var(--font-family-body);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.signup-container-form input,
+.signup-container-form textarea {
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+    width: 70%;
+    border: 1px solid var(--form-border-red, #DF6DA2);
+    background: var(--form-background-yellow, #FFFAB9);
+}
+
+.form-name,
+.form-Address,
+.form-year,
+.form-massage {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.signup-container-form textarea {
+    height: 125px;
+}
+
+.signup-container-button {
+    margin-top: 40px;
+    filter: drop-shadow(4px 4px var(--color-black));
+    color: var(--color-accent-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    background-color: var(--color-accent-red);
+    border: none;
+    text-align: center;
+    padding: 10px 40px;
+    height: 60px;
+}
+
+.submit-button p {
+    color: var(--color-white);
+    font-family: var(--font-family-body);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.submit-button img {
+    display: flex;
+    margin-left: auto;
+    background-color: var(--color-accent-red);
+    position: absolute;
+    right: 40px;
+    height: 40px;
+    width: 40px;
+}
+
+@media (max-width:750px) {}
