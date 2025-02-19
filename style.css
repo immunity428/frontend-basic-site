@@ -298,7 +298,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   width: 250px;
-  height: 180px;
+  height: 184px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -424,39 +424,6 @@ form {
   right: 40px;
   height: 40px;
   width: 40px;
-}
-
-/* ホバー時のアニメーションを追加 */
-.courses-box-cours {
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.courses-other {
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-/* ホバー時に影を消してから影を追加 */
-.courses-box-cours:hover {
-  filter: none;
-  filter: drop-shadow(12px 12px 2px var(--color-button-hover-red));
-}
-
-.courses-other:hover {
-  filter: none;
-  filter: drop-shadow(12px 12px 2px var(--color-course-hover-yellow));
-}
-
-/* 背景の色変更 */
-.courses-box-cours:hover .course-textbox {
-  background: var(--course-hover-yellow, #f4e877);
-}
-
-.submit-button:hover {
-  background: var(--color-button-hover-red, #f4e877);
-}
-
-.submit-button:hover .arrow-right-img {
-  background: var(--color-button-hover-red, #f4e877);
 }
 
 @media (max-width: 750px) {
@@ -598,41 +565,6 @@ form {
   margin-top: 40px;
   filter: drop-shadow(4px 4px var(--color-black));
   color: var(--color-accent-red);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.submit-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  background-color: var(--color-accent-red);
-  border: none;
-  text-align: center;
-  padding: 10px 40px;
-  height: 60px;
-}
-
-.submit-button p {
-  color: var(--color-white);
-  font-family: var(--font-family-body);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.submit-button img {
-  display: flex;
-  margin-left: auto;
-  background-color: var(--color-accent-red);
-  position: absolute;
-  right: 40px;
-  height: 40px;
-  width: 40px;
 }
 
 @media (max-width: 750px) {
@@ -682,16 +614,6 @@ form {
   .signup-container-form textarea {
     height: 100px;
   }
-
-  .submit-button p {
-    font-size: 14px;
-  }
-
-  .submit-button img {
-    right: 20px;
-    height: 30px;
-    width: 30px;
-  }
 }
 
 /* Fotter */
@@ -724,4 +646,39 @@ form {
   .footer-container p {
     font-size: 12px;
   }
+}
+
+/* アニメーション */
+
+/* ホバー時のアニメーションを追加 */
+.courses-box-cours {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.courses-other {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* ホバー時に影を消してから影を追加 */
+.courses-box-cours:hover {
+  filter: none;
+  filter: drop-shadow(12px 12px 2px var(--color-button-hover-red));
+}
+
+.courses-other:hover {
+  filter: none;
+  filter: drop-shadow(12px 12px 2px var(--color-course-hover-yellow));
+}
+
+/* 背景の色変更 */
+.courses-box-cours:hover .course-textbox {
+  background: var(--course-hover-yellow, #f4e877);
+}
+
+.submit-button:hover {
+  background: var(--color-button-hover-red, #f4e877);
+}
+
+.submit-button:hover .arrow-right-img {
+  background: var(--color-button-hover-red, #f4e877);
 }
