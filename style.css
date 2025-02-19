@@ -399,7 +399,7 @@ form {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 100%;
+  width: 800px;
   background-color: var(--color-accent-red);
   border: none;
   text-align: center;
@@ -451,11 +451,11 @@ form {
   background: var(--course-hover-yellow, #f4e877);
 }
 
-.courses-other:hover {
+.submit-button:hover {
   background: var(--color-button-hover-red, #f4e877);
 }
 
-.courses-other:hover .arrow-right-img {
+.submit-button:hover .arrow-right-img {
   background: var(--color-button-hover-red, #f4e877);
 }
 
@@ -500,5 +500,9 @@ form {
   .arrow-right-img {
     width: 30px;
     height: 30px;
+  }
+
+  .submit-button {
+    width: 100%;
   }
 }
