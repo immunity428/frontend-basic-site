@@ -426,39 +426,6 @@ form {
   width: 40px;
 }
 
-/* ホバー時のアニメーションを追加 */
-.courses-box-cours {
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.courses-other {
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-/* ホバー時に影を消してから影を追加 */
-.courses-box-cours:hover {
-  filter: none;
-  filter: drop-shadow(12px 12px 2px var(--color-button-hover-red));
-}
-
-.courses-other:hover {
-  filter: none;
-  filter: drop-shadow(12px 12px 2px var(--color-course-hover-yellow));
-}
-
-/* 背景の色変更 */
-.courses-box-cours:hover .course-textbox {
-  background: var(--course-hover-yellow, #f4e877);
-}
-
-.submit-button:hover {
-  background: var(--color-button-hover-red, #f4e877);
-}
-
-.submit-button:hover .arrow-right-img {
-  background: var(--color-button-hover-red, #f4e877);
-}
-
 @media (max-width: 750px) {
   .courses-box-cours {
     flex-direction: column;
@@ -505,4 +472,213 @@ form {
   .submit-button {
     width: 100%;
   }
+}
+
+/* Signup */
+.signup {
+  background-color: var(--color-accent-yellow);
+  display: flex;
+  padding: 80px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  align-self: stretch;
+}
+
+.signup-container {
+  display: flex;
+  padding: 0px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.signup-container-title p {
+  margin: 0px;
+  padding: 0px;
+  color: var(--color-black);
+  font-family: var(--font-family-heading);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+}
+
+.signup-container-text p {
+  margin: 0px;
+  padding: 0px;
+  color: var(--color-black);
+  font-family: var(--font-family-body);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+form {
+  width: 100%;
+}
+
+.signup-container-form {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: auto;
+}
+
+.signup-container-form label {
+  color: var(--color-black);
+  font-family: var(--font-family-body);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.signup-container-form input,
+.signup-container-form textarea {
+  display: flex;
+  padding: 10px;
+  border-radius: 8px;
+  width: 70%;
+  border: 1px solid var(--form-border-red, #df6da2);
+  background: var(--form-background-yellow, #fffab9);
+}
+
+.form-name,
+.form-Address,
+.form-year,
+.form-massage {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.signup-container-form textarea {
+  height: 125px;
+}
+
+.signup-container-button {
+  margin-top: 40px;
+  filter: drop-shadow(4px 4px var(--color-black));
+  color: var(--color-accent-red);
+}
+
+@media (max-width: 750px) {
+  .signup {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .signup-container {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .signup-container-title p {
+    font-size: 24px;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .signup-container-form {
+    gap: 10px;
+  }
+
+  .signup-container-form label {
+    font-size: 16px;
+  }
+
+  .signup-container-form input,
+  .signup-container-form textarea {
+    padding: 8px;
+    width: 100%;
+  }
+
+  .form-name,
+  .form-Address,
+  .form-year,
+  .form-massage {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .signup-container-form textarea {
+    height: 100px;
+  }
+}
+
+/* Fotter */
+.footer {
+  background-color: var(--color-black);
+}
+
+.footer-container {
+  display: flex;
+  padding: 60px 0px;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.footer-container p {
+  color: var(--color-white);
+  font-family: var(--font-family-body);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 750px) {
+  .footer-container {
+    padding: 40px 0px;
+  }
+
+  .footer-container p {
+    font-size: 12px;
+  }
+}
+
+/* アニメーション */
+
+/* ホバー時のアニメーションを追加 */
+.courses-box-cours {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.courses-other {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* ホバー時に影を消してから影を追加 */
+.courses-box-cours:hover {
+  filter: none;
+  filter: drop-shadow(12px 12px 2px var(--color-button-hover-red));
+}
+
+.courses-other:hover {
+  filter: none;
+  filter: drop-shadow(12px 12px 2px var(--color-course-hover-yellow));
+}
+
+/* 背景の色変更 */
+.courses-box-cours:hover .course-textbox {
+  background: var(--course-hover-yellow, #f4e877);
+}
+
+.submit-button:hover {
+  background: var(--color-button-hover-red, #f4e877);
+}
+
+.submit-button:hover .arrow-right-img {
+  background: var(--color-button-hover-red, #f4e877);
 }
